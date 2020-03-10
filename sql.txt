@@ -1,0 +1,28 @@
+テーブルの作成
+
+
+テーブルの削除
+DROP TABLE `period_form`;
+
+テーブル内容
+CREATE TABLE `period_form`(
+    `id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    `departure_date` DATE NOT NULL,
+    `tour_name` TINYTEXT NOT NULL,
+    `reserver name` TINYTEXT NOT NULL,
+    `age` TINYINT NOT NULL,
+    `gender` TINYTEXT NOT NULL,
+    `phone` TINYTEXT NOT NULL
+    );
+
+インサートデート
+INSERT INTO `period_form`
+(`departure_date`, `tour_name`, `reserver name`, `age`, `gender`, `phone`
+) VALUES (
+"2020-03-10","Aコース","亀元",18,"女","09090744235");
+
+レコードの変更
+UPDATE `period_form` SET `tour_name` = "Bコース" WHERE `id` = 1;
+
+レコードの削除
+DELETE FROM `period_form` WHERE id = 1;
