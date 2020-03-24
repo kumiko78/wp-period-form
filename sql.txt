@@ -1,19 +1,18 @@
-テーブルの作成
+テーブル作成
+CREATE TABLE `period_form`(
+    `id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    `departure_date` DATE NOT NULL,
+    `tour_name` TINYTEXT NOT NULL,
+    `reserver_name` TINYTEXT NOT NULL,
+    `age` TINYINT NOT NULL,
+    `gender` TINYTEXT NOT NULL,
+    `phone` TINYTEXT NOT NULL
+    );
 
 
 テーブルの削除
 DROP TABLE `period_form`;
 
-テーブル内容
-CREATE TABLE `period_form`(
-    `id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    `departure_date` DATE NOT NULL,
-    `tour_name` TINYTEXT NOT NULL,
-    `reserver name` TINYTEXT NOT NULL,
-    `age` TINYINT NOT NULL,
-    `gender` TINYTEXT NOT NULL,
-    `phone` TINYTEXT NOT NULL
-    );
 
 インサートデート
 INSERT INTO `period_form`
